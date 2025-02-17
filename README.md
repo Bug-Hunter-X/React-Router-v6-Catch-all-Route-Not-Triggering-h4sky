@@ -1,0 +1,3 @@
+# React Router v6 Catch-all Route Issue
+
+This repository demonstrates a problem with the catch-all route ('/*') in React Router v6.  Routes other than the catch-all route are working correctly, however, the catch-all route does not trigger when navigating to an invalid or unknown path.  The solution provides a fix by placing the catch-all route at the end of the Route array.  This ensures it only triggers if no other routes match.
